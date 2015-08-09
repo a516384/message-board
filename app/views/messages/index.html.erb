@@ -15,9 +15,9 @@
 
 <%= form_for(Message.new) do |f| %>
   名前:
-  <%= f.text_field :name %>
+<div> <%= f.text_area :name %></div>
 
   内容:
-  <%= f.text_field :body %>
+  <div> <%= f.text_area :body %></div>
   <%= f.submit %>
 <% end %>
